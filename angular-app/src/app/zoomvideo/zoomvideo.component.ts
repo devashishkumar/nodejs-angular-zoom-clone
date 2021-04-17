@@ -53,6 +53,8 @@ export class ZoomvideoComponent implements OnInit {
       this.socket.on('user-connected', userId => {
         this.connectToNewUser(userId, stream)
       });
+    }).catch(error => {
+      window.console.log(error, '57');
     })
   }
 
