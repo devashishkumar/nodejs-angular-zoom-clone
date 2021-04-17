@@ -1,0 +1,56 @@
+<div class="zoom">
+    <div class="zoom__left">
+       <div class="zoom__videos">
+          <div id="video-grid">
+    
+          </div>
+
+          <video id="video" width="720" height="540" autoplay muted></video>
+       </div>
+       <div class="zoom__controls">
+          <div class="zoom__controls__block">
+             <div (click)="muteUnmute()" class="zoom__controls__button zoom__mute_button">
+                <i class="fas fa-microphone"></i>
+                <span>Mute</span>
+             </div>
+             <div (click)="playStop()" class="zoom__controls__button zoom__video_button" >
+                <i class="fas fa-video"></i>
+                <span>Stop Video</span>
+             </div>
+          </div>
+          <div class="zoom__controls__block">
+             <div class="zoom__controls__button">
+                <i class="fas fa-shield-alt"></i>
+                <span>Security</span>
+             </div>
+             <div class="zoom__controls__button">
+                <i class="fas fa-user-friends"></i>
+                <span>Participants</span>
+             </div>
+             <div class="zoom__controls__button">
+                <i class="fas fa-comment-alt"></i>
+                <span>Chat</span>
+             </div>
+          </div>
+          <div class="zoom__controls__block">
+             <div class="zoom__controls__button">
+                <span class="leave_meeting">Leave Meeting</span>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="zoom__right">
+       <div class="zoom__header">
+          <h6>Chat</h6>
+       </div>
+       <div class="zoom__chat_window">
+          <ul class="messages">
+             
+          </ul>
+
+       </div>
+       <div class="zoom__message_container">
+          <input id="chat_message" type="text" placeholder="Type message here...">
+       </div>
+    </div>
+ </div>
